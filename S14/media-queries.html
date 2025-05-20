@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        width: 500px;
+        height: 400px;
+        border: 2px solid black;
+      }
+      @media only screen and (min-width: 300px),
+        (max-width: 500px) and (orientation: landscape) {
+        div {
+          background-color: coral;
+        }
+        h2 {
+          color: red;
+        }
+      }
+
+      @media only screen and (min-width: 501px) and (max-width: 700px) {
+        body {
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: row-reverse;
+        }
+        div {
+          background-color: green;
+        }
+        h2 {
+          color: green;
+          text-shadow: 0 0 10px black;
+        }
+      }
+
+      @media only screen and (min-width: 701px) and (max-width: 1000px) {
+        body {
+          display: flex;
+          justify-content: space-evenly;
+        }
+        div {
+          background-color: blue;
+        }
+        h2 {
+          color: blue;
+          text-shadow: 0 0 10px rgb(168, 204, 25);
+        }
+      }
+
+      @media only screen and (min-width: 1001px) {
+        div {
+          background-color: black;
+        }
+        h2 {
+          color: black;
+          text-shadow: 0 0 10px rgb(243, 10, 10);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Welcome to Media Queries</h2>
+    <div id="container"></div>
+  </body>
+</html>
